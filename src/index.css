@@ -25,9 +25,10 @@ body{
   min-height: 70px;
   text-align: center;
   margin-left: 170px;
-
-  
-
+ 
+}
+.logo >h1{
+  transform: rotate(20deg);
 }
 .nav{
   margin: auto;
@@ -52,13 +53,17 @@ body{
 }
 
 .container{
-  padding-right: 150px;
+  /* padding-right: 150px;
   padding-left: 150px;
   padding-top:50px ;
-  padding-bottom: 20px;
+  padding-bottom: 20px; */
+  justify-content: center;
+  align-content: center;
+  margin: 0px 2rem;
   display: flex;
   height: 90vh;
-  max-width: 1250px;
+  
+  
   
 }
 
@@ -69,6 +74,8 @@ body{
   grid-gap: 20px;
   padding: 10px;
   background-color: #ffffff;
+  min-width: 400px;
+  
 }
 .card{
   justify-content: center;
@@ -78,7 +85,22 @@ body{
   padding-top: 80px;
   border-radius: 15px;
   box-shadow: 0px 5px 10px silver;
+ transition: 1.5s;
+
+  
 }
+.card > img{
+  margin: auto;
+
+  width: 70px;
+  height: 70px;
+}
+.card:hover{
+  transform: scale(1.5);
+  background-color: rgb(215, 235, 235);
+  color: black;
+}
+
 .card .price{
   color:rgb(10, 104, 104) ;
   margin: 10px 0;
@@ -86,6 +108,10 @@ body{
 .side_container{
   margin-top: 10px;
   padding: 20px;
+  transition-duration: 4s;
+}
+.side_container:hover{
+  transform: rotateY(330deg);
 }
 .side_container article{
   padding-top: 20px;
@@ -98,5 +124,6 @@ body{
   margin-top: 10px;
   margin-left: 10px;
   background-color: rgb(221, 233, 233);
+  min-width: 300px;
 }
 
